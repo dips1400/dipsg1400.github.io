@@ -1,0 +1,431 @@
+<!--<?php
+sessionn_start();
+
+if(isset($_session['username'])){
+  $_session['meg']="You must Login first to view this page";
+  header("location : loginpage.html");
+}
+
+if(isset($_GET['logout']))
+{
+  session_destroy();
+  unset($_session['username']);
+  header("location : loginpage.html");
+}
+
+?>-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Art Gallery by bigSplash </title>
+        <meta charset="UTF=8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="bigSplash is Online Art Gallery that provides user to perchase amazing and bountiful arts from different worldwide artists.bigSplash even
+        provides you to sell your own arts.Free Shipping.Free Returns.Original Art Works.Get to acknowledge arts and exhibitions at your own pace...!!!.">
+        <meta name="author" content="Dipti Gawde & Bhagyashree Duggireddy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="80">
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+          <!--For silde show-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+
+
+        <!--********************start of bootstrap links*********************-->
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>-->
+        <!--*******************end of bootstrap links*******************-->
+        
+        <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;500&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <nav>
+        <div class="logo"><b>bigSplash</b></div>
+        <ul>
+            <li><a href="/ubuntu/bhagyshree/roothp.html">Home</a></li>
+            <!--<li><a href="/loginpage.html">Login</a></li>-->
+            <li><a href="/ubuntu/ucds/artistcreate.php">Upload Arts</a></li>
+            <li><a href="/ubuntu/likes.html">Likes</a>
+            <ul>
+                <li><a href="/ubuntu/cart.html">Your cart</a></li>
+                <li><a href="/ubuntu/wishlist.html">Wishlists</a></li>
+            </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a>
+            <ul>
+                <li><a href="/ubuntu/bhagyshree/home page clg prj/aboutus.html">Blog</a></li>
+                <li><a href="#footer_content">Contact Us</a></li>
+            </ul>
+            </li>
+            <li><a href="/ubuntu/organizers.php">Events</a></li>
+        </ul>
+    </nav>
+
+
+    <br>
+
+    <h2 style="color: black;">Welcome to bigSplash's digital art gallery</h2>
+    <h5 style="color: black; text-align: center;">Register For Upcoming Event <a href="exhibitionregis.php">HERE</h5></a>
+
+    <!--<?php
+        if(isset($_session['success'])):
+    ?>-->
+    <br><br>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="realism/whitepot.jpg" class="d-block w-100" alt="teapainting" width="300px" height="500px">
+            <p style="color: white;" class="para">Check beautiful pottery and sculpture photography.</p>
+            <a href="/ubuntu/bhagyshree/paintings.html"><button type="button" class="btn btn-outline-secondary">Explore</button></a>
+          </div>
+          <div class="carousel-item">
+            <img src="realism/whiteflower.jpg" class="d-block w-100" alt="whiteflower" width="300px" height="500px">
+            <p style="color: white;" class="para">Check-on one of the amazing paintings.</p>
+            <a href="/ubuntu/bhagyshree/paintings.html"><button type="button" class="btn btn-outline-secondary">Explore</button></a>
+          </div>
+          <div class="carousel-item">
+            <img src="realism/womanpainting.jpg" class="d-block w-100" alt="tajmahal" width="300px" height="500px">
+            <p style="color: white;" class="para">Take a look on bigSplash's rising artists.</p>
+            <a href="/ubuntu/bhagyshree/paintings.html"><button type="button" class="btn btn-outline-secondary">Explore</button></a>
+          </div>
+            <div class="carousel-item">
+            <img src="realism/goldenpaint.jpg" class="d-block w-100" alt="tajmahal" width="300px" height="500px">
+            <p style="color: white;" class="para2">Make look your home elegant by amazing wallpaintings and arts.</p>
+            <a href="/ubuntu/bhagyshree/paintings.html"><button type="button" class="btn btn-outline-secondary" id="btn2">Explore</button></a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+
+
+
+
+
+    <!--<img class="first_img" src="wallliving/pinkkpink.jpg" alt="walllivingpaint" height="400" width="780" > -->
+    
+    <!--<div id="carousels" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="fresco/images.jpg" class="d-block w-100" alt="carouselimg1">
+            <div class="carousel-caption d-none d-md-block">
+            <p style="color: black;">This is one of my favourite art i bought for my home decore.bigSplash really provides there customers with varitiesin arts, paintings and even sculpture.</p>
+            <h5 style="color: black;">Shivani Gupta</h5>
+          </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="portrait/smallgirl.jpg" class="d-block w-100" alt="carouselimg2">
+            <div class="carousel-caption d-none d-md-block">
+              <p style="color: black;">One of the best digital art gallery i have ever seen.Making hundreds and thousands of artist and art lovers make digital platform more realiable.</p>
+              <h5 style="color: black;">Roy Patinson</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="paintings.jpg" class="d-block w-100" alt="carouselimg3">
+            <div class="carousel-caption d-none d-md-block">
+              <p style="color: black;">Whenever it comes to arts, bigSplash is my first and foremost prefferable site.I get painitings of my choice and even selling painting on this site is so easy.</p>
+              <h5 style="color: black;">Rivesh Singhaniya</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>-->
+
+    
+
+    <div class="middle_cont">
+        <div class="left-col">
+            <img src="realism/potteryy.jpeg" alt="painting_pic" width="550">
+        </div>
+        <div class="right-col" >
+            <p class="para_f">WELCOME TO OUR ART GALLERY</p>
+            <p class="para_s">Our motive is to create unique and fabulous kind of arts.<br>
+            All together bigSplash community works to make most out of arts,<br>
+            to deliver arts directly to you in highest possible quality.<br>
+            In this gallery, you can enjoy varities of arts, arts by famous artist,<br>
+            updates about events and workshops, and many more.</p><br>
+             <a class="learn" href="aboutus.html">Learn more</a>
+        </div>
+    </div>
+
+    <img src="diffpaints/greenleaf.jpg" width="220px" class="greenleaf">
+
+    <div class="paint_cont">
+            <p style="color: black;" id="para">ARTS BY TOP ARTISTS</p>
+            <div class="circular--portrait">
+            <img  src="artist/artistcr.png" alt="artist">
+            </div>
+            <a href="artsbyartist.html"><img class="btn_img" src="right-arrow-in-black-circular-button.png"></a>
+     </div>
+
+     <div class="paint_cont2"></div>
+    <!--<div class="vl"></div>-->
+    <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="right_cont">
+        <a href="#"><img class="darkpaint" src="realism/darkpaint.jpg" alt="darkpaintabstract" width="300"></a>
+        </div>
+        <a href="#"><p class="abstract" style="color: #d8d3cd;">ABSTRACT</p></a>
+      </div>
+    <!--<div class="v2"></div>-->
+    <div class="col">
+    <div>
+        <a href="#"><img class="landscape" src="landscape/tree.jpg" alt="darkland" width="300" height="300px"></a>
+    </div>
+    <a href="#"><p class="landscape_text" style="color: #d8d3cd;">LANDSCAPE</p></a>
+    </div>
+    </div>
+    </div>
+    
+    
+    <!--<div class="v3"></div>-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div>
+          <a href="#"><img class="portrait" src="portrait/womanpotrait.jpg" alt="womanpotrait" width="300" height="320px"></a>
+          </div>
+          <a href="#"><p class="portrait_text" style="color: #d8d3cd;">PORTRAIT</p></a>
+        </div>
+        <div class="col">
+          <div>
+          <a href="#"><img class="geometric" src="diffpaints/geo.jpg" alt="geometricpaint" width="300" height="320px"></a>
+          </div>
+          <a href="#"><p class="geo_text" style="color: #d8d3cd;">GEOMETRIC</p></a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <p class="choice_text" style="color: #ffb9b7;">Browse by choice</p>
+    <img id="choice_img" src="icons/choice2.jpg" width="100">
+    <a href="choice.html"><img class="arrow" src="icons/right-arrow (1).png" width="60"></a>
+
+    <img src="diffpaints/pinkline.jpg" width="210px" class="pinkline">
+    <br><br><br>
+
+    <div class="diffpaint">
+    <img src="diffpaints/images.jpg" width="376px" height="250px" class="pinka">
+    <img src="diffpaints/cars.jpg" width="376px" height="250px" class="carss">
+    <img src="justpaints/pottery.jpg" width="376px" height="250px" class="pot">
+    <img src="diffpaints/vegiee.jpg" width="376px" height="250px" class="veg">
+    </div>
+
+
+
+
+    <div class="collection">
+        <p style="color: black;" id="para2">This Week Top collections</p>
+        <br><br><br>
+        <a href="#"><img src="automotor/images.jpg" class="auto"></a>
+        <a href="#"><img src="fresco/fresco.jpg" width="400px" class="fresco"></a>
+        <a href="#"><img src="galaxy/images (3).jpg" width="369px" class="real"></a>
+        <a href="#"><img src="nature/darklotus.jpg" width="369px" class="dark"></a>
+        <a href="#"><p style="color: black; text-decoration: none;" class="naming1">Auto cars by <span style="color:#678a74; font-size: 18px;">Jacob</span></p></a>
+        <p style="color: black;" class="price1">50,000/-</p>
+        <a href="#"><p style="color: black;" class="naming2">Fresco by <span style="color:#678a74; font-size: 17px;">Laura</span></p></a>
+        <p style="color: black;" class="price2">90,000/-</p>
+        <a href="#"><p style="color: black;" class="naming3">Universe-Sky by <span style="color:#678a74; font-size: 17px;">Nicolaka</span></p></a>
+        <p style="color: black;" class="price3">70,000/-</p>
+        <a href="#"><p style="color: black;" class="naming4">Dark Lotus by <span style="color:#678a74; font-size: 17px;">James</span></p></a>
+        <p style="color: black;" class="price4">40,000/-</p>
+    </div>
+    <div class="v4"></div>
+    <div class="print_cont">
+        <div class="v5"></div>
+        <p class="print_title">bigSplash | Printing , Framing and Print-on-demand</p>
+        <p class="print_para">In addition to our art creation for interior decoration, we also provide print-on-demand<br>
+        services on highest possible archival quality for photographers and all art photography <br>enthusiasts.Our 
+        paper selection is big part of this process. You may also get <a href="#" class="link">discounts</a><br> and many more surprices. If you
+        need any frame or print-on-demand services<br> please feel free to <a href="#" class="link">contact us.</a>  </p>
+    </div>
+    <div class="knowledge">
+       <h2 style="color: black;">Get knowledge about famous artists, different arts, and history.</h2>
+       <img src="artist/leocircle.png" class="artistinfo1" width="200px">
+       <img src="artist/picassocircle.png" class="artistinfo2" width="200px">
+       <img src="artist/mfcirlce.png" class="artistinfo3" width="200px">
+       <img src="artist/dimicircle.png" class="artistinfo4" width="200px">
+       <img src="artist/andrecircle.png" class="artistinfo5" width="200px">
+
+       <a href="#" ><p class="artist_write1" style="color: #ee9595;">leonardo da vinci</p></a>
+       <a href="#" ><p class="artist_write2" style="color: #ee9595;">Pablo Picasso</p></a>
+       <a href="#" ><p class="artist_write3" style="color: #ee9595;">M.F.Hussain</p></a>
+       <a href="#" ><p class="artist_write4" style="color: #ee9595;">Dimitra Milan Duun</p></a>
+       <a href="#" ><p class="artist_write5" style="color: #ee9595;">Andre hemer</p></a>
+    </div>
+    <div class="review">
+        <a href="#"><img src="diffpaints/CHARCOAL.jpg" width="200px" class="charcoal"></a>
+        <a href="#"><img src="diffpaints/Ink-PAinting.jpg" width="200px" height="160px" class="ink"></a>
+        <a href="#"><img src="diffpaints/Casein-Painting.jpg" width="200px" class="casein"></a>
+        <a href="#"><img src="diffpaints/AERIAL-PERSPECTIVE.jpg" width="200px" class="aerial" height="160px"></a>
+        <a href="#"><img src="diffpaints/horsesculpture.jpg" width="200px" class="horse" height="160px"></a>
+    </div>
+    <div class="v6"></div>
+    <p style="color: #ecb390;" class="charpaint">Charcoal Drawing<br><a href="#" style="color: #ecb390;">more</a></p>
+    <p style="color: #ecb390;" class="inkpaint">Ink Painting<br><a href="#" style="color: #ecb390;">more</a></p>
+    <p style="color: #ecb390;" class="caseinpaint">Casein Painting<br><a href="#" style="color: #ecb390;" class="more3">more</a></p>
+    <p style="color: #ecb390;" class="airpaint">Aerial Perspective<br><a href="#" style="color: #ecb390;" class="more4">more</a></p>
+    <p style="color: #ecb390;" class="horsepaint">Sculpture<br><a href="#" style="color: #ecb390;" class="more5">more</a></p>
+    <br><br><br>
+    <div>
+    <img src="diffpaints/sculpture2.jpg" alt="sculpture" width="48%" height="630px"   class="paintinfo">
+    <p style="color: black;" class="scul">Youthful Women<br><span id="sculprice" style="color: black;">Rs.1,50,000/-</span></p>
+    </div>
+
+    <button class="button button2" style="color: black;">ADD TO CART</button>
+    <button class="Button" style="vertical-align:middle"><span>BUY IT NOW </span></button>
+
+    
+<p class="sculinfo" style="color: black;">Wondrously detailed worlds emerge from busts of youthful women in clay sculptures by Chinese artist Yuanxing Liang. 
+    Ambling trees, bridges, and temples emerge from the figures hairline, fusing realism and fantasy in smooth resin. 
+    Despite their complex design, Liang occasionally creates small editions of his sculptures. The artist is a gradute 
+    of the Sichuan Academy of Fine Arts. You can see more of his intricately wrought fantasy worlds on Weibo. More on <a href="thisiscolossal.com" style="color: #ecb390;">thisiscolossal.com.</a>
+</p>
+
+<footer id="footer_content">
+  <!-- Footer main -->
+  <section class="ft-main">
+    <div class="ft-main-item">
+      <h2 class="ft-title">Customer service</h2>
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gift card</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Arts for decor</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Shipping</a></li>
+      </ul>
+    </div>   
+   
+    <div class="ft-main-item">
+      <h2 class="ft-title">Who are we?</h2>
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </div>
+
+
+    
+    <div class="ft-main-item">
+        <h2 class="ft-title">Are you an artist</h2>
+      <ul>
+        <li><a href="#">Join to bigSplash</a></li>
+        <li><a href="loginpage.html">Login for artist</a></li>
+        <li><a href="#">Art Galleries</a></li>
+        <li><a href="#">Webinars</a></li>
+      </ul>
+    </div>
+
+
+    <div class="ft-main-item">
+      <h2 class="ft-title">Contact Us</h2>
+    <ul>
+      <li><a href="+91-9130017903">+91-9130017903</a></li>
+      <li><a href="+91-7757944127">+91-7757944127</a></li>
+      <li><a href="#">Teams</a></li>
+      
+    </ul>
+    </div>
+
+
+    <div class="ft-main-item">
+      <h2 class="ft-title">Stay Updated</h2>
+      <p>Subscribe to our newsletter to get our latest news.</p>
+      <form>
+        <input type="email" name="email" placeholder="Enter email address">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
+ 
+  <!-- Footer social -->
+  <section class="ft-social">
+    <ul class="ft-social-list">
+      <li><a href="#"><img class="fb" src="icons/fffbb.png" width="55px"></a></li>
+      <li><a href="#"><img class="twitter" src="icons/circle-cropped (12).png" width="40px"></a></li>
+      <li><a href="#"><img class="insta" src="icons/circle-cropped (10).png" width="40px"></a></li>
+      <li><a href="#"><img class="github" src="icons/circle-cropped (11).png" width="40px"></a></li>
+      <li><a href="#"><img class="linkin" src="icons/circle-cropped (3).png" width="40px"></a></li>
+      <li><a href="#"><img class="yt" src="icons/circle-cropped (14).png" width="40px"></a></li>
+    </ul>
+  </section>
+ 
+  <!-- Footer legal -->
+  <section class="ft-legal">
+    <ul class="ft-legal-list">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; 2020 Copyright bigSplash.</li>
+    </ul>
+  </section>
+</footer>
+
+
+</body>
+</html>

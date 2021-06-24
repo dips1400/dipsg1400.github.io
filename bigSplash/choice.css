@@ -1,0 +1,224 @@
+nav{
+    margin-top: -20px;
+    background-color: black;
+    opacity: 0.8;
+}
+    	
+
+nav .logo{
+    float: left;
+    padding: 40px;
+    font-weight: 600;
+    font-style: initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 53px;
+    color: white;
+}
+    	
+        
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+    	
+
+nav ul{
+    float: right;
+    list-style: none;
+    position: relative;
+    margin-right: 20px;
+    padding-top: 30px;
+    margin-top: 14px;
+    
+}
+    	
+        
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+    	
+        
+nav ul li a{
+    color:  #cfdac8;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 18px 20px;
+    font-weight: 400;
+    
+}
+    	
+        
+nav ul li a:hover{
+    box-shadow: 0 0 5px #cfdac8;
+    border-radius: 5px;
+    color:#cfdac8;
+    text-decoration: none;
+}
+    	
+    
+nav ul ul{
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    /*transition: top .3s;*/
+    border-top: 0px solid #cfdac8;
+}
+    	
+        
+nav ul li:hover > ul{
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+
+}
+    	
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 140px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid #cfdac8 0.1;
+    padding-top: 2px;
+    right: 40px;
+}
+
+
+
+
+.row{
+    background-color: #aaaaaa;
+    height: 660px;
+    margin-top: 100px;
+}
+
+
+
+.paintbrush{
+    float: left;
+    padding: 20px;
+    border-radius: 5%;
+    margin-left: 20px;
+    
+    
+}
+
+#mydropdown{
+    height: 630px;
+    max-height: 630px;
+    overflow-y: scroll;
+    padding: 25px;
+    margin-left: 90px;
+}
+
+@media only screen and (max-device-width: 1300px) {
+    .parallax {
+      background-attachment: scroll;
+      z-index: -1;
+    }
+}
+
+.para{
+    margin-top: -690px;
+    font-family: 'Bad Script', cursive;
+    font-size: 60px;
+    margin-left: 120px;
+    position: relative;  
+}
+
+#para2{
+    font-size: 30px;
+    background-color: #cbbcb1;
+    padding: 7px;
+}
+
+#para3{
+    font-size: 30px;
+    background-color: #cbbcb1;
+    padding: 7px;
+}
+.v1{
+    border-bottom: 3px solid black;
+    margin-top: -60px;
+}
+
+.slidecontainer{
+    margin-top: 400px;
+    margin-left: 40px;
+}
+
+.p{
+    font-size: 20px;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 9px;
+    background: black;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 4px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+.imagecontainer{
+    margin-left: 570px;
+    margin-top: -80px;
+}
+
+.p1{
+    font-size: 20px;
+}
+
+.imagecontainer a:hover{
+    opacity: 0.6;
+    border-radius: 10px;
+    border:2px solid #333;
+}
+
+/*#artdropdown{
+    margin-left: 900px;
+    
+}*/
+
+.arttype{
+    width: 160px;
+    margin-left: 940px;
+    margin-top: -130px;
+    font-size: x-large;
+}
+
+#mydropdown2{
+    height: 190px;
+    max-height: 190px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#mydropdown2 a{
+    background-color: white;
+    color: #333;
+}
+
+
+#mydropdown2 a:hover{
+    border-bottom: 3px solid pink;
+}

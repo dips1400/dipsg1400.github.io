@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Choose-arts-by-choice-bigSplash</title>
+       <meta name="author" content="Dipti Gawde & Bhagyashree Duggireddy">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta charset="UTF=8">
+       <meta name="keywords" content="HTML, CSS, JavaScript">
+       <meta name="description" content="bigSplash is Online Art Gallery that provides user to perchase amazing and bountiful arts from different worldwide artists.bigSplash even
+       provides you to sell your own arts.Free Shipping.Free Returns.Original Art Works.Get to acknowledge arts and exhibitions at your own pace...!!!.">
+        
+       <!--FOR BOOTSTRAP-->
+
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+
+
+       <!--RANGE SILDER-->
+       <!--<link rel="stylesheet" href="range<a href="https://www.jqueryscript.net/slider/">Slider</a>.css" />-->
+       <link rel="stylesheet" href="https://www.jqueryscript.net/slider/">
+       <script src="/path/to/jquery.min.js"></script>
+       <script src="rangeSlider.js"></script>
+
+
+       <link href="choice.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+
+      <nav>
+        <div class="logo"><b>bigSplash</b></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="loginpage.html">Login</a></li>
+            <li><a href="likes.html">Likes</a>
+            <ul>
+                <li><a href="cart.html">Your cart</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#footer_content">Contact Us</a></li>
+            </ul>
+            </li>
+            <li><a href="organizers.php">Events</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="row">
+        <div class="col">
+          <div class="firstpgl">
+            <img src="diffpaints/paintingbrush.jpg" width="100%" height="650px" class="paintbrush">
+          </div>
+        </div>
+        <div class="col">
+          <div class="parallax" id="mydropdown">
+            <img src="artsaying/5.jpg" width="500px" height="500px">
+            <img src="artsaying/art2.jpg" width="500px" height="500px">
+            <img src="artsaying/art1.jpg" width="500px" height="500px">
+            <img src="artsaying/images.jpg" width="500px" height="500px">
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br>
+      <div class="para1">
+      <p style="color: black;" class="para">Art
+      <br><span style="color: black;" id="para2">enables us to find ourselves</span>
+      <br><span style="color: black;" id="para3">and lose ourselves at the same time. </span></p>
+      </div>
+
+      <div class="v1"></div>
+
+
+      <div class="row1">
+        <div class="col">
+            <div class="slidecontainer">
+            <p class="p">Art Price:<span id="demo"></span></p>
+            <input type="range" min="30000" max="400000" value="0" id="myrange" class="slider">
+            </div>  
+        </div>
+      </div>
+
+      <div class="imagecontainer">
+          <p class="p">Art Size:<span id="size"></span></p>
+          <a href="#"><img src="icons/image.png" width="40px"></a>
+          <a href="#"><img src="icons/image.png" width="50px"></a>
+          <a href="#"><img src="icons/image.png" width="60px"></a>
+      </div>
+
+      <div class="col">
+        <div class="dropdown" id="artdropdown">
+          <button class="btn btn-outline-secondary dropdown-toggle arttype" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Art types
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mydropdown2">
+            <a class="dropdown-item" href="#">Abstract</a>
+            <a class="dropdown-item" href="#">Landscape</a>
+            <a class="dropdown-item" href="#">Potrait</a>
+            <a class="dropdown-item" href="#">Geometric</a>
+            <a class="dropdown-item" href="#">Oil Painting</a>
+            <a class="dropdown-item" href="#">Ink Paint</a>
+            <a class="dropdown-item" href="#">Fresco</a>
+            <a class="dropdown-item" href="#">Digital Painting</a>
+            <a class="dropdown-item" href="#">Aerial Perspective</a>
+            <a class="dropdown-item" href="#">Casein Painting</a>
+            <a class="dropdown-item" href="#">Impasto</a>
+            <a class="dropdown-item" href="#">Panel Painting</a>
+            <a class="dropdown-item" href="#"> Panorama</a>
+            <a class="dropdown-item" href="#">Sgraffito</a>
+            <a class="dropdown-item" href="#">Water Miscible Oil Paints</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <script>
+        var slider = document.getElementById("myrange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+
+        /*$("#myrange").rangeSlider(
+          {
+            min:30000,
+            max:400000,
+          }
+        );*/
+        
+      </script>
+
+
+
+
+
+
+        <!--<div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Default checked radio
+            </label>
+          </div>-->
+
+    </body>
+</html>

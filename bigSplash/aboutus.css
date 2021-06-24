@@ -1,0 +1,277 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    color: white;
+}
+    	
+body{
+    font-family: sans-serif;
+}
+    	
+
+nav{
+    margin-top: -20px;
+    background-color: black;
+    opacity: 0.8;
+}
+    	
+
+nav .logo{
+    float: left;
+    padding: 40px;
+    font-weight: 600;
+    font-style: initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 53px;
+    color: white;
+}
+    	
+        
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+    	
+
+nav ul{
+    float: right;
+    list-style: none;
+    position: relative;
+    margin-right: 20px;
+    padding-top: 38px;
+    
+}
+    	
+        
+nav ul li{
+    
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+    	
+        
+nav ul li a{
+    color:  #cfdac8;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 18px 20px;
+    font-weight: 400;
+    
+}
+    	
+        
+nav ul li a:hover{
+    box-shadow: 0 0 5px #cfdac8;
+    border-radius: 5px;
+    color: #cfdac8;
+}
+    	
+    
+nav ul ul{
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    /*transition: top .3s;*/
+    border-top: 0px solid #cfdac8;
+}
+    	
+        
+nav ul li:hover > ul{
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+
+}
+    	
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 140px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid #cfdac8 0.1;
+    padding-top: 9px;
+    right: 40px;
+}
+
+
+.img{
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+}
+
+.center {
+    position: absolute;
+    top: 34%;
+    left: 48%;
+    /*transform: translate(-50%, -100%);*/
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.para{
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    font-size: 41px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.title{
+    font-size: xx-large;
+    padding-top: 53px;
+    margin-left: 8%;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.para2{
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.para2,.sub1{
+    margin-left: 280px;
+    margin-top: -125px;
+    font-size: x-large;
+}
+
+.sub2{
+
+    margin-left: 680px;
+    margin-top: -330px;
+    font-size: x-large;
+}
+
+.saying1{
+    margin-top: 150px;
+    margin-left: 300px;
+    font-size: 20px;
+    width: 40%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.saying2{
+    margin-left: 800px;
+    margin-top: -231px;
+    width: 40%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+
+footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+    margin-top: 300px;
+    
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.ft-main-item a:hover {
+    text-decoration: underline;
+}
+.ft-title {
+    color: #fff;
+    font-family: ’Merriweather’, serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+    margin-left: 20px;
+}
+
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 77.5rem /*1240px*/ ) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+input[type="submit"] {
+    background-color: #ff9292;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.45rem;
+}
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+
+.fb{
+    margin-top: -8px;
+}
+
+
+.ft-social-list li:hover{
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+
+ul.ft-social-list {
+    list-style-type: none;
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}

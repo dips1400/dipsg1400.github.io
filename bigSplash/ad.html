@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=email], input[type=password],button[type=submit]  {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container {
+  padding: 1px;
+}
+
+span.password {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+  span.password {
+     display: block;
+     float: none;
+  }
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Admin Login Form</h2>
+
+<form action="/ubuntu/ad.php" method="post">
+ 
+  <div class="container">
+   
+	  <input type="email" placeholder="Enter Email Id" name="email" required><br><br>
+
+ 
+    <input type="password" maxlength="8" placeholder="Enter Password" name="password" required><br><br>
+        
+    <button type="submit">Login</button>
+   
+</form>
+
+</body>
+</html>
+

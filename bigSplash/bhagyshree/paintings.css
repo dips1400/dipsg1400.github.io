@@ -1,0 +1,263 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+nav{
+    margin-top: -20px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+nav .logo{
+    float: left;
+    padding: 40px;
+    font-weight: 600;
+    font-style: initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 53px;
+    color: white;
+}
+
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+nav ul{
+    float: right;
+    list-style: none;
+    position: relative;
+    margin-right: 20px;
+    padding-top: 30px;
+    margin-top: 14px;
+
+}
+
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+
+
+nav ul li a{
+    color:  #cdd0cb;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 18px 20px;
+    font-weight: 400;
+
+}
+
+
+nav ul li a:hover{
+    box-shadow: 0 0 5px #cfdac8;
+    border-radius: 5px;
+    color: #cfdac8;
+}
+
+
+nav ul ul{
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    /*transition: top .3s;*/
+    border-top: 0px solid #cfdac8;
+}
+
+
+nav ul li:hover > ul{
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 140px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid #cfdac8 0.1;
+    padding-top: 9px;
+    right: 40px;
+    padding-bottom: 3px;
+}
+
+
+
+.dropdown{
+    margin-left: 380px;
+    margin-top: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+.vl{
+    /*border-left: 2px solid #ffa5a5;*/
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+
+}
+
+
+
+.imger{
+    padding: 1px;
+    margin: 1px;;
+   /* border: 1px solid rgb(119, 116, 117);*/
+    border-spacing: separate;
+    background-color: rgba(243, 242, 242, 0.342);
+    color: #0e0d0d;
+}
+
+
+.form{
+    margin:100px;
+    padding:20px;
+    border: 2px solid  #0c0c0c;
+    border-radius: 5px;
+
+}
+
+#footerid{
+    margin: 30px;
+
+}
+
+.con-input{
+    background: rgb(242, 243, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 12px;
+    position: relative;
+    width: 440px;
+    float: left;
+}
+
+.con-input input{
+    border: 0px;
+    background: transparent;
+    outline: none;
+    font-size: .9rem;
+    font-family: 'Poppins',sans-serif;
+    margin-left: 8px;
+    width: 400px;
+    transition: all .25s ease;
+}
+.con-input input:focus{
+    padding-left: 5px;
+    padding-right: 0px;
+}
+.con-input input:focus ~ .bg{
+    border: 2px solid #000;
+}
+.con-input input:focus ~ i{
+    transform: translate(0,-8px);
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,15);
+}
+
+.con-input i.icon{
+    order: -1;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    z-index: 20;
+    transition: all .25s ease;
+}
+
+.bg{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    border-radius: inherit;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    transition: all .25s ease;
+}
+
+.search{
+  background-color: rgb(238, 238, 238);
+  padding: 50px;
+}
+
+.select{
+width:11rem;
+position: relative;
+}
+
+.select:hover .list{
+opacity: 1;
+visibility: visible;
+}
+.select-section{
+padding: 0.5rem;
+border-radius: 4px;
+background-color: #fff;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 1.2rem;
+cursor: pointer;
+}
+
+.list{
+border-radius: 4px;
+background-color: rgb(225, 226, 226);
+position: absolute;
+top: 110%;
+left: 0px;
+right: 0px;
+opacity: 0px;
+visibility: hidden;
+transition: opacity 0.2s linear,visibility 0.2s linear;
+}
+
+.list-item{
+padding: 0.5rem;
+font-size: 1rem;
+}
+
+.btn {
+    transition-duration: 0.4s;
+    width: 250px;
+    }
+
+  .btn:hover {
+    background-color: #c9c9c9d5;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }

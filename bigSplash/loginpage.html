@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login page bigSplash
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link href="login.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    </head>
+    <body>
+                        
+
+
+
+
+
+        <!--for artist-->
+
+
+        <div class="artist">
+            Are you an artist ?<br>
+            Please login here..<br><br>
+        <button onclick="document.getElementById('alogin').style.display='block'" style="width:auto;">Login</button><br><br>
+            Don't have account ?<br><br>
+        <a href="/ubuntu/artistallcode/aaregister.php" class="signuplink">Sign up</a>
+
+    <div id="alogin" class="modal">
+  
+     <form class="modal-content animate" method="POST" action="/ubuntu/artistlogin.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('alogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="paintingsf/loginlogo.svg" alt="Avatar" class="avatar" width="120px" height="120px">
+    </div>
+
+    <div class="container">
+    <div class="username">
+      <label for="uname" class=""><b>Email</b></label>
+      <input type="text" placeholder="Enter Username" name="email" id="email" required>
+    </div>
+    <div class="password">
+      <label for="psw"><b>Password</b></label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" id="password" required>
+    </div>
+      <button onclick="myFunction()" type="submit"  name="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('alogin').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+    </form>
+    </div>
+        </div>
+
+
+        <div class="visitor">
+        <p style="color: white;">Are you a visitor<br>Please login here</p><br>
+        <button type="button" class="btn btn-outline-secondary"><a href="/ubuntu/visitorfrontlogin.php">Login</a></button><br><br>
+        <a href="/ubuntu/visitorregis.php" class="signuplink" style="color: aliceblue;">Sign up</a>
+        </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('alogin');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+         
+
+
+    
+
+    </body>
+</html>

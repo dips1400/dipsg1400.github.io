@@ -1,0 +1,141 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    
+}
+        
+body{
+    font-family: sans-serif;
+}
+        
+
+nav{
+    margin-top: -20px;
+    background-color: black;
+    opacity: 0.8;
+}
+        
+
+nav .logo{
+    float: left;
+    padding: 40px;
+    font-weight: 600;
+    font-style: initial;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 53px;
+    color: white;
+}
+        
+        
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+        
+
+nav ul{
+    float: right;
+    list-style: none;
+    position: relative;
+    margin-right: 20px;
+    padding-top: 30px;
+    margin-top: 14px;
+    
+}
+        
+        
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+        
+        
+nav ul li a{
+    color:  #cdd0cb;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 18px 20px;
+    font-weight: 400;
+    
+}
+        
+        
+nav ul li a:hover{
+    box-shadow: 0 0 5px #cfdac8;
+    border-radius: 5px;
+    color: #cfdac8;
+}
+        
+    
+nav ul ul{
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    /*transition: top .3s;*/
+    border-top: 0px solid #cfdac8;
+}
+        
+        
+nav ul li:hover > ul{
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+
+}
+        
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 140px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid #cfdac8 0.1;
+    padding-top: 9px;
+    right: 40px;
+    padding-bottom: 3px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Redressed', cursive;;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #111111;
+}
+.About,.Terms,.Privacy,.Copyright{
+    margin:50px;
+    padding:20px;
+    border: 2px solid  #0f0f0f;
+    border-radius: 5px;
+    
+}
+
+p{
+    margin: 20px;
+    padding:10px;
+   
+}
+
+.buttons{
+    margin-left: 280px;
+    margin-top:10px;
+    padding:10px;
+}
+
+.btn{
+    margin:10px;
+    padding:10px;
+    
+}
+
+.goback{
+    margin-left:500px;
+    padding:2px;
+}

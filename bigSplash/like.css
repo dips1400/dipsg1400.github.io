@@ -1,0 +1,41 @@
+*{
+    margin: 40px 40px;
+}
+
+.main-container{
+    height: 530px;
+    width: 60%;
+    background-color: #93abd3;
+    border: 15px solid #333;
+    margin-left: 480px;
+}
+
+.img{
+    float: right;
+}
+
+
+.gif{
+    float:left;
+    margin-left: 35px;
+    margin-top: -550px;
+}
+
+
+.para{
+    font-family: 'Josefin Slab', serif;
+    font-size: xx-large;
+    margin-left: 30px;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+hr{
+    width: 300px;
+    margin-top: -300px;
+}
+
+a{
+    font-size: 27px;
+    margin-left: 9px;
+}
